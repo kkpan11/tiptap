@@ -7,7 +7,7 @@ export interface SuperscriptExtensionOptions {
    * @default {}
    * @example { class: 'foo' }
    */
-  HTMLAttributes: Object,
+  HTMLAttributes: Record<string, any>,
 }
 
 declare module '@tiptap/core' {
@@ -61,7 +61,7 @@ export const Superscript = Mark.create<SuperscriptExtensionOptions>({
           // If it falls through we’ll match, and this mark will be applied.
           return null
         },
-      } satisfies StyleParseRule,
+      } as StyleParseRule,
     ]
   },
 

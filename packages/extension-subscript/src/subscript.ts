@@ -7,7 +7,7 @@ export interface SubscriptExtensionOptions {
    * @default {}
    * @example { class: 'foo' }
    */
-  HTMLAttributes: Object,
+  HTMLAttributes: Record<string, any>,
 }
 
 declare module '@tiptap/core' {
@@ -61,7 +61,7 @@ export const Subscript = Mark.create<SubscriptExtensionOptions>({
           // If it falls through we’ll match, and this mark will be applied.
           return null
         },
-      } satisfies StyleParseRule,
+      } as StyleParseRule,
     ]
   },
 

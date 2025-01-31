@@ -1,5 +1,122 @@
 # Change Log
 
+## 2.11.5
+
+### Patch Changes
+
+- 98fffbb: Upgraded prosemirror-tables to 1.6.3 to fix cells being resizable while the editor is uneditable
+
+## 2.11.4
+
+## 2.11.3
+
+## 2.11.2
+
+## 2.11.1
+
+## 2.11.0
+
+## 2.10.4
+
+## 2.10.3
+
+## 2.10.2
+
+## 2.10.1
+
+## 2.10.0
+
+## 2.9.1
+
+## 2.9.0
+
+### Patch Changes
+
+- feea1f6: Update prosemirror-view version
+
+## 2.8.0
+
+### Minor Changes
+
+- 6834a7f: Bundling of packages no longer includes tiptap dependency type definitions
+
+## 2.7.4
+
+## 2.7.3
+
+## 2.7.2
+
+## 2.7.1
+
+## 2.7.0
+
+### Patch Changes
+
+- bd34793: Bumped prosemirror versions
+
+## 2.7.0-pre.0
+
+### Patch Changes
+
+- bd34793: Bumped prosemirror versions
+
+## 2.6.6
+
+## 2.6.5
+
+## 2.6.4
+
+## 2.6.3
+
+## 2.6.2
+
+## 2.6.1
+
+## 2.6.0
+
+## 2.5.9
+
+## 2.5.8
+
+## 2.5.7
+
+## 2.5.6
+
+### Patch Changes
+
+- b5c1b32: Because of an XSS vulnerability in the `prosemirror-model` package, we've updated all our prosemirror dependencies to the latest versions.
+
+  **Upgraded packages**:
+
+  - `prosemirror-model` from `^1.22.1` to `^1.22.2`
+  - `prosemirror-tables` from `^1.3.7` to `^1.4.0`
+  - `prosemirror-trailing-node` from `^2.0.8` to `^2.0.9`
+  - `prosemirror-view` from `^1.33.8` to `^1.33.9`
+
+  See https://discuss.prosemirror.net/t/heads-up-xss-risk-in-domserializer/6572
+
+## 2.5.5
+
+## 2.5.4
+
+### Patch Changes
+
+- dd7f9ac: There was an issue with the cjs bundling of packages and default exports, now we resolve default exports in legacy compatible way
+
+## 2.5.3
+
+## 2.5.2
+
+## 2.5.1
+
+## 2.5.0
+
+## 2.5.0-pre.16
+
+## 2.5.0-pre.15
+
+## 2.5.0-pre.14
+
 ## 2.5.0-pre.13
 
 ## 2.5.0-pre.12

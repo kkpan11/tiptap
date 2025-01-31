@@ -1,5 +1,226 @@
 # Change Log
 
+## 2.11.5
+
+## 2.11.4
+
+## 2.11.3
+
+## 2.11.2
+
+## 2.11.1
+
+## 2.11.0
+
+## 2.10.4
+
+## 2.10.3
+
+## 2.10.2
+
+## 2.10.1
+
+## 2.10.0
+
+## 2.9.1
+
+## 2.9.0
+
+## 2.8.0
+
+### Minor Changes
+
+- 6834a7f: Bundling of packages no longer includes tiptap dependency type definitions
+
+## 2.7.4
+
+## 2.7.3
+
+## 2.7.2
+
+## 2.7.1
+
+## 2.7.0
+
+## 2.7.0-pre.0
+
+### Patch Changes
+
+- Updated dependencies [97ea55f]
+- Updated dependencies [9e18d24]
+- Updated dependencies [f805333]
+- Updated dependencies [07fa49d]
+- Updated dependencies [7f24a66]
+- Updated dependencies [97ea55f]
+- Updated dependencies [a22767e]
+  - @tiptap/core@2.7.0-pre.0
+  - @tiptap/extension-text-style@2.7.0-pre.0
+
+## 2.6.6
+
+### Patch Changes
+
+- Updated dependencies [8d8d999]
+  - @tiptap/core@2.6.6
+  - @tiptap/extension-text-style@2.6.6
+
+## 2.6.5
+
+### Patch Changes
+
+- @tiptap/core@2.6.5
+- @tiptap/extension-text-style@2.6.5
+
+## 2.6.4
+
+### Patch Changes
+
+- @tiptap/core@2.6.4
+- @tiptap/extension-text-style@2.6.4
+
+## 2.6.3
+
+### Patch Changes
+
+- Updated dependencies [da76972]
+  - @tiptap/core@2.6.3
+  - @tiptap/extension-text-style@2.6.3
+
+## 2.6.2
+
+### Patch Changes
+
+- @tiptap/core@2.6.2
+- @tiptap/extension-text-style@2.6.2
+
+## 2.6.1
+
+### Patch Changes
+
+- @tiptap/core@2.6.1
+- @tiptap/extension-text-style@2.6.1
+
+## 2.6.0
+
+### Patch Changes
+
+- Updated dependencies [86a8553]
+- Updated dependencies [c0e631f]
+- Updated dependencies [222f2ac]
+- Updated dependencies [e31673d]
+  - @tiptap/core@2.6.0
+  - @tiptap/extension-text-style@2.6.0
+
+## 2.5.9
+
+### Patch Changes
+
+- Updated dependencies [84ebd51]
+- Updated dependencies [0ec0af6]
+- Updated dependencies [ae0254d]
+- Updated dependencies [efb27fa]
+  - @tiptap/core@2.5.9
+  - @tiptap/extension-text-style@2.5.9
+
+## 2.5.8
+
+### Patch Changes
+
+- Updated dependencies [a08bf85]
+  - @tiptap/core@2.5.8
+  - @tiptap/extension-text-style@2.5.8
+
+## 2.5.7
+
+### Patch Changes
+
+- Updated dependencies [b012471]
+- Updated dependencies [cc3497e]
+  - @tiptap/core@2.5.7
+  - @tiptap/extension-text-style@2.5.7
+
+## 2.5.6
+
+### Patch Changes
+
+- Updated dependencies [618bca9]
+- Updated dependencies [35682d1]
+- Updated dependencies [2104f0f]
+  - @tiptap/core@2.5.6
+  - @tiptap/extension-text-style@2.5.6
+
+## 2.5.5
+
+### Patch Changes
+
+- Updated dependencies [4cca382]
+- Updated dependencies [3b67e8a]
+  - @tiptap/core@2.5.5
+  - @tiptap/extension-text-style@2.5.5
+
+## 2.5.4
+
+### Patch Changes
+
+- dd7f9ac: There was an issue with the cjs bundling of packages and default exports, now we resolve default exports in legacy compatible way
+- Updated dependencies [dd7f9ac]
+  - @tiptap/extension-text-style@2.5.4
+  - @tiptap/core@2.5.4
+
+## 2.5.3
+
+### Patch Changes
+
+- @tiptap/core@2.5.3
+- @tiptap/extension-text-style@2.5.3
+
+## 2.5.2
+
+### Patch Changes
+
+- Updated dependencies [07f4c03]
+  - @tiptap/core@2.5.2
+  - @tiptap/extension-text-style@2.5.2
+
+## 2.5.1
+
+### Patch Changes
+
+- @tiptap/core@2.5.1
+- @tiptap/extension-text-style@2.5.1
+
+## 2.5.0
+
+### Patch Changes
+
+- Updated dependencies [fb45149]
+- Updated dependencies [fb45149]
+- Updated dependencies [fb45149]
+- Updated dependencies [fb45149]
+  - @tiptap/core@2.5.0
+  - @tiptap/extension-text-style@2.5.0
+
+## 2.5.0-pre.16
+
+### Patch Changes
+
+- @tiptap/core@2.5.0-pre.16
+- @tiptap/extension-text-style@2.5.0-pre.16
+
+## 2.5.0-pre.15
+
+### Patch Changes
+
+- @tiptap/core@2.5.0-pre.15
+- @tiptap/extension-text-style@2.5.0-pre.15
+
+## 2.5.0-pre.14
+
+### Patch Changes
+
+- @tiptap/core@2.5.0-pre.14
+- @tiptap/extension-text-style@2.5.0-pre.14
+
 ## 2.5.0-pre.13
 
 ### Patch Changes

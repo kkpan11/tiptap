@@ -1,5 +1,546 @@
 # Change Log
 
+## 2.11.5
+
+### Patch Changes
+
+- @tiptap/extension-bubble-menu@2.11.5
+- @tiptap/extension-floating-menu@2.11.5
+
+## 2.11.4
+
+### Patch Changes
+
+- @tiptap/extension-bubble-menu@2.11.4
+- @tiptap/extension-floating-menu@2.11.4
+
+## 2.11.3
+
+### Patch Changes
+
+- 40b7d47: This does a shallow diff between the current options and the incoming ones to determine whether we should try to write the new options and incur a state update within the editor.
+
+  It purposefully is not doing a full diff as several options are known to be problematic (callback handlers, extensions array, the content itself), so we rely on referential equality only to do this diffing which should be fairly fast since there are only about 10-15 options, and this diffs only the ones the user has actually attempted to set. Some options (e.g. editorProps, parseOptions, coreExtensionOptions) are an object that may need to be memoized by the user if they want to avoid unnecessary state updates.
+
+  - @tiptap/extension-bubble-menu@2.11.3
+  - @tiptap/extension-floating-menu@2.11.3
+
+## 2.11.2
+
+### Patch Changes
+
+- @tiptap/extension-bubble-menu@2.11.2
+- @tiptap/extension-floating-menu@2.11.2
+
+## 2.11.1
+
+### Patch Changes
+
+- dac7fd2: Resolves #5870 by re-ordering executation of selectionUpdate handler
+  - @tiptap/extension-bubble-menu@2.11.1
+  - @tiptap/extension-floating-menu@2.11.1
+
+## 2.11.0
+
+### Patch Changes
+
+- Updated dependencies [d9b6ef5]
+  - @tiptap/extension-floating-menu@2.11.0
+  - @tiptap/extension-bubble-menu@2.11.0
+
+## 2.10.4
+
+### Patch Changes
+
+- @tiptap/extension-bubble-menu@2.10.4
+- @tiptap/extension-floating-menu@2.10.4
+
+## 2.10.3
+
+### Patch Changes
+
+- @tiptap/extension-bubble-menu@2.10.3
+- @tiptap/extension-floating-menu@2.10.3
+
+## 2.10.2
+
+### Patch Changes
+
+- @tiptap/extension-bubble-menu@2.10.2
+- @tiptap/extension-floating-menu@2.10.2
+
+## 2.10.1
+
+### Patch Changes
+
+- @tiptap/extension-bubble-menu@2.10.1
+- @tiptap/extension-floating-menu@2.10.1
+
+## 2.10.0
+
+### Patch Changes
+
+- 5eee480: React 19 changes how refs works, it will double mount them, all that we needed to do though was to use the JSX transform instead of createElement directly #5846
+- 7619215: This changes useEditorState to use the useLayoutEffect hook instead of the useEffect hook, so that state that might render to the page can be committed in one pass instead of two.
+- 7619215: Fixes an issue where the bubble and flaoting menus on blur would remount
+- 7619215: React 19 is now allowed as a peer dep, we did not have to make any changes for React 19
+- Updated dependencies [7619215]
+- Updated dependencies [7619215]
+- Updated dependencies [1959eb5]
+  - @tiptap/extension-bubble-menu@2.10.0
+  - @tiptap/extension-floating-menu@2.10.0
+
+## 2.9.1
+
+### Patch Changes
+
+- @tiptap/extension-bubble-menu@2.9.1
+- @tiptap/extension-floating-menu@2.9.1
+
+## 2.9.0
+
+### Patch Changes
+
+- 304eedb: preserve editable option across re-renders #5547
+  - @tiptap/extension-bubble-menu@2.9.0
+  - @tiptap/extension-floating-menu@2.9.0
+
+## 2.8.0
+
+### Minor Changes
+
+- 6834a7f: Bundling of packages no longer includes tiptap dependency type definitions
+
+### Patch Changes
+
+- Updated dependencies [6834a7f]
+  - @tiptap/extension-floating-menu@2.8.0
+  - @tiptap/extension-bubble-menu@2.8.0
+
+## 2.7.4
+
+### Patch Changes
+
+- 26056aa: Add editorContainerProps to EditorProvider. This allows for any HTML attributes to be added to the EditorContent when using EditorProvider
+  - @tiptap/extension-bubble-menu@2.7.4
+  - @tiptap/extension-floating-menu@2.7.4
+
+## 2.7.3
+
+### Patch Changes
+
+- @tiptap/extension-bubble-menu@2.7.3
+- @tiptap/extension-floating-menu@2.7.3
+
+## 2.7.2
+
+### Patch Changes
+
+- @tiptap/extension-bubble-menu@2.7.2
+- @tiptap/extension-floating-menu@2.7.2
+
+## 2.7.1
+
+### Patch Changes
+
+- @tiptap/extension-bubble-menu@2.7.1
+- @tiptap/extension-floating-menu@2.7.1
+
+## 2.7.0
+
+### Patch Changes
+
+- 7f24a66: Update the Typescript types for NodeViews, bringing them inline with there actual implementation
+- c99627d: `useEditorState` now defaults to using a deep equal comparison for it's `equalityFn` option, which makes it more convenient to use
+- 4ff2a4e: ReactNodeViewRenderer now accepts a callback for attrs of the wrapping element to be updated on each node view update
+  - @tiptap/extension-bubble-menu@2.7.0
+  - @tiptap/extension-floating-menu@2.7.0
+
+## 2.7.0-pre.0
+
+### Patch Changes
+
+- 7f24a66: Update the Typescript types for NodeViews, bringing them inline with there actual implementation
+- c99627d: `useEditorState` now defaults to using a deep equal comparison for it's `equalityFn` option, which makes it more convenient to use
+- 4ff2a4e: ReactNodeViewRenderer now accepts a callback for attrs of the wrapping element to be updated on each node view update
+- Updated dependencies [97ea55f]
+- Updated dependencies [bd34793]
+- Updated dependencies [9e18d24]
+- Updated dependencies [f805333]
+- Updated dependencies [07fa49d]
+- Updated dependencies [7f24a66]
+- Updated dependencies [97ea55f]
+- Updated dependencies [a22767e]
+  - @tiptap/core@2.7.0-pre.0
+  - @tiptap/pm@2.7.0-pre.0
+  - @tiptap/extension-bubble-menu@2.7.0-pre.0
+  - @tiptap/extension-floating-menu@2.7.0-pre.0
+
+## 2.6.6
+
+### Patch Changes
+
+- Updated dependencies [8d8d999]
+  - @tiptap/core@2.6.6
+  - @tiptap/extension-bubble-menu@2.6.6
+  - @tiptap/extension-floating-menu@2.6.6
+  - @tiptap/pm@2.6.6
+
+## 2.6.5
+
+### Patch Changes
+
+- @tiptap/core@2.6.5
+- @tiptap/extension-bubble-menu@2.6.5
+- @tiptap/extension-floating-menu@2.6.5
+- @tiptap/pm@2.6.5
+
+## 2.6.4
+
+### Patch Changes
+
+- 6a0f4f3: Resolves a bug where `useEditor` may not properly cleanup an instance created when in React's StrictMode #5492
+  - @tiptap/core@2.6.4
+  - @tiptap/extension-bubble-menu@2.6.4
+  - @tiptap/extension-floating-menu@2.6.4
+  - @tiptap/pm@2.6.4
+
+## 2.6.3
+
+### Patch Changes
+
+- Updated dependencies [da76972]
+  - @tiptap/core@2.6.3
+  - @tiptap/extension-bubble-menu@2.6.3
+  - @tiptap/extension-floating-menu@2.6.3
+  - @tiptap/pm@2.6.3
+
+## 2.6.2
+
+### Patch Changes
+
+- d4d99e8: When changing the types, a bug was introduced where null could no longer be a valid value
+  - @tiptap/core@2.6.2
+  - @tiptap/extension-bubble-menu@2.6.2
+  - @tiptap/extension-floating-menu@2.6.2
+  - @tiptap/pm@2.6.2
+
+## 2.6.1
+
+### Patch Changes
+
+- a42692e: This resolves some typescript errors with the exported React type to remove contentComponent from being exported (it is an implementation detail)
+  - @tiptap/core@2.6.1
+  - @tiptap/extension-bubble-menu@2.6.1
+  - @tiptap/extension-floating-menu@2.6.1
+  - @tiptap/pm@2.6.1
+
+## 2.6.0
+
+### Minor Changes
+
+- e31673d: This PR significantly improves the performance of React NodeViews in a couple of ways:
+
+  - It now uses useSyncExternalStore to synchronize changes between React & the editor instance
+  - It dramatically reduces the number of re-renders by re-using instances of React portals that have already been initialized and unaffected by the change made in the editor
+
+  We were seeing performance problems with React NodeViews because a change to one of them would cause a re-render to all instances of node views. For an application that heavily relies on node views in React, this was quite expensive.
+  This should dramatically cut down on the number of instances that have to re-render, and, making each of those re-renders much less costly.
+
+### Patch Changes
+
+- c7fd0f8: Updates the typings to `useEditor` and `EditorProvider` to not conflict with the core Editor type
+- 8ea34e4: This resolves a bug with `useEditor` where event handlers were being called 2x for what should have been a single registration
+- Updated dependencies [86a8553]
+- Updated dependencies [222f2ac]
+- Updated dependencies [e31673d]
+  - @tiptap/core@2.6.0
+  - @tiptap/extension-bubble-menu@2.6.0
+  - @tiptap/extension-floating-menu@2.6.0
+  - @tiptap/pm@2.6.0
+
+## 2.5.9
+
+### Patch Changes
+
+- 7c8889a: Optimize `useEditor` and `useEditorState` to reduce number of instances created while still being performant #5432
+
+  The core of this change is two-fold:
+
+  - have the effect run on every render (i.e. without a dep array)
+  - schedule destruction of instances, but bail on the actual destruction if the instance was still mounted and a new instance had not been created yet
+
+  It should plug a memory leak, where editor instances could be created but not cleaned up in strict mode.
+  As well as fixing a bug where a re-render, with deps, was not applying new options that were set on `useEditor`.
+
+- Updated dependencies [84ebd51]
+- Updated dependencies [0ec0af6]
+- Updated dependencies [ae0254d]
+- Updated dependencies [efb27fa]
+  - @tiptap/core@2.5.9
+  - @tiptap/extension-bubble-menu@2.5.9
+  - @tiptap/extension-floating-menu@2.5.9
+  - @tiptap/pm@2.5.9
+
+## 2.5.8
+
+### Patch Changes
+
+- 99d7820: Resolve a bug an editor could be instantiated but not destroyed. This was causing issues with multiple instances of plugins still being active and interfering with each other
+- Updated dependencies [a08bf85]
+  - @tiptap/core@2.5.8
+  - @tiptap/extension-bubble-menu@2.5.8
+  - @tiptap/extension-floating-menu@2.5.8
+  - @tiptap/pm@2.5.8
+
+## 2.5.7
+
+### Patch Changes
+
+- 42dc27a: Fix, if using a deps array destroy the previous instance to avoid ghost instances
+- Updated dependencies [b012471]
+- Updated dependencies [cc3497e]
+  - @tiptap/core@2.5.7
+  - @tiptap/extension-bubble-menu@2.5.7
+  - @tiptap/extension-floating-menu@2.5.7
+  - @tiptap/pm@2.5.7
+
+## 2.5.6
+
+### Patch Changes
+
+- Updated dependencies [b5c1b32]
+- Updated dependencies [618bca9]
+- Updated dependencies [35682d1]
+- Updated dependencies [2104f0f]
+  - @tiptap/pm@2.5.6
+  - @tiptap/core@2.5.6
+  - @tiptap/extension-bubble-menu@2.5.6
+  - @tiptap/extension-floating-menu@2.5.6
+
+## 2.5.5
+
+### Patch Changes
+
+- Updated dependencies [4cca382]
+- Updated dependencies [3b67e8a]
+  - @tiptap/core@2.5.5
+  - @tiptap/extension-bubble-menu@2.5.5
+  - @tiptap/extension-floating-menu@2.5.5
+  - @tiptap/pm@2.5.5
+
+## 2.5.4
+
+### Patch Changes
+
+- dd7f9ac: There was an issue with the cjs bundling of packages and default exports, now we resolve default exports in legacy compatible way
+- Updated dependencies [dd7f9ac]
+  - @tiptap/extension-floating-menu@2.5.4
+  - @tiptap/extension-bubble-menu@2.5.4
+  - @tiptap/core@2.5.4
+  - @tiptap/pm@2.5.4
+
+## 2.5.3
+
+### Patch Changes
+
+- 70eebfd: The optional deps argument to useEditor was not being respected for performance optimizations, now if deps are declared a new editor instance is created
+  - @tiptap/core@2.5.3
+  - @tiptap/extension-bubble-menu@2.5.3
+  - @tiptap/extension-floating-menu@2.5.3
+  - @tiptap/pm@2.5.3
+
+## 2.5.2
+
+### Patch Changes
+
+- Updated dependencies [07f4c03]
+  - @tiptap/core@2.5.2
+  - @tiptap/extension-bubble-menu@2.5.2
+  - @tiptap/extension-floating-menu@2.5.2
+  - @tiptap/pm@2.5.2
+
+## 2.5.1
+
+### Patch Changes
+
+- @tiptap/core@2.5.1
+- @tiptap/extension-bubble-menu@2.5.1
+- @tiptap/extension-floating-menu@2.5.1
+- @tiptap/pm@2.5.1
+
+## 2.5.0
+
+### Patch Changes
+
+- fb45149: Fixes strict mode accidentally destroying the editor instance
+- fb45149: Fix the typings
+- fb45149: We've heard a number of complaints around the performance of our React integration, and we finally have a solution that we believe will satisfy everyone. We've made a number of optimizations to how the editor is rendered, as well give you more control over the rendering process.
+
+  Here is a summary of the changes and how you can take advantage of them:
+
+  - SSR rendering was holding back our ability to have an editor instance on first render of `useEditor`. We've now made the default behavior to render the editor immediately on the client. This behavior can be controlled with the new `immediatelyRender` option which when set to `false` will defer rendering until the second render (via a useEffect), this should only be used when server-side rendering.
+  - The default behavior of the useEditor hook is to re-render the editor on every editor transaction. Now with the `shouldRerenderOnTransaction` option, you can disable this behavior to optimize performance. Instead, to access the new editor state, you can use the `useEditorState` hook.
+  - `useEditorState` this new hook allows you to select from the editor instance any state you need to render your UI. This is useful when you want to optimize performance by only re-rendering the parts of your UI that need to be updated.
+
+  Here is a usage example:
+
+  ```jsx
+  const editor = useEditor({
+    /**
+     * This option gives us the control to enable the default behavior of rendering the editor immediately.
+     */
+    immediatelyRender: true,
+    /**
+     * This option gives us the control to disable the default behavior of re-rendering the editor on every transaction.
+     */
+    shouldRerenderOnTransaction: false,
+    extensions: [StarterKit],
+    content: `
+      <p>
+        A highly optimized editor that only re-renders when it’s necessary.
+      </p>
+      `,
+  });
+
+  /**
+   * This hook allows us to select the editor state we want to use in our component.
+   */
+  const currentEditorState = useEditorState({
+    /**
+     * The editor instance we want to use.
+     */
+    editor,
+    /**
+     * This selector allows us to select the data we want to use in our component.
+     * It is evaluated on every editor transaction and compared to it's previously returned value.
+     * You can return any data shape you want.
+     */
+    selector: (ctx) => ({
+      isBold: ctx.editor.isActive("bold"),
+      isItalic: ctx.editor.isActive("italic"),
+      isStrike: ctx.editor.isActive("strike"),
+    }),
+    /**
+     * This function allows us to customize the equality check for the selector.
+     * By default it is a `===` check.
+     */
+    equalityFn: (prev, next) => {
+      // A deep-equal function would probably be more maintainable here, but, we use a shallow one to show that it can be customized.
+      if (!next) {
+        return false;
+      }
+      return (
+        prev.isBold === next.isBold &&
+        prev.isItalic === next.isItalic &&
+        prev.isStrike === next.isStrike
+      );
+    },
+  });
+  ```
+
+- Updated dependencies [fb45149]
+- Updated dependencies [fb45149]
+- Updated dependencies [fb45149]
+- Updated dependencies [fb45149]
+  - @tiptap/core@2.5.0
+  - @tiptap/extension-bubble-menu@2.5.0
+  - @tiptap/extension-floating-menu@2.5.0
+  - @tiptap/pm@2.5.0
+
+## 2.5.0-pre.16
+
+### Patch Changes
+
+- 1110280: Fixes strict mode accidentally destroying the editor instance
+  - @tiptap/core@2.5.0-pre.16
+  - @tiptap/extension-bubble-menu@2.5.0-pre.16
+  - @tiptap/extension-floating-menu@2.5.0-pre.16
+  - @tiptap/pm@2.5.0-pre.16
+
+## 2.5.0-pre.15
+
+### Patch Changes
+
+- 3a67a5b: Fix the typings
+  - @tiptap/core@2.5.0-pre.15
+  - @tiptap/extension-bubble-menu@2.5.0-pre.15
+  - @tiptap/extension-floating-menu@2.5.0-pre.15
+  - @tiptap/pm@2.5.0-pre.15
+
+## 2.5.0-pre.14
+
+### Patch Changes
+
+- df5609c: We've heard a number of complaints around the performance of our React integration, and we finally have a solution that we believe will satisfy everyone. We've made a number of optimizations to how the editor is rendered, as well give you more control over the rendering process.
+
+  Here is a summary of the changes and how you can take advantage of them:
+
+  - SSR rendering was holding back our ability to have an editor instance on first render of `useEditor`. We've now made the default behavior to render the editor immediately on the client. This behavior can be controlled with the new `immediatelyRender` option which when set to `false` will defer rendering until the second render (via a useEffect), this should only be used when server-side rendering.
+  - The default behavior of the useEditor hook is to re-render the editor on every editor transaction. Now with the `shouldRerenderOnTransaction` option, you can disable this behavior to optimize performance. Instead, to access the new editor state, you can use the `useEditorState` hook.
+  - `useEditorState` this new hook allows you to select from the editor instance any state you need to render your UI. This is useful when you want to optimize performance by only re-rendering the parts of your UI that need to be updated.
+
+  Here is a usage example:
+
+  ```jsx
+  const editor = useEditor({
+    /**
+     * This option gives us the control to enable the default behavior of rendering the editor immediately.
+     */
+    immediatelyRender: true,
+    /**
+     * This option gives us the control to disable the default behavior of re-rendering the editor on every transaction.
+     */
+    shouldRerenderOnTransaction: false,
+    extensions: [StarterKit],
+    content: `
+      <p>
+        A highly optimized editor that only re-renders when it’s necessary.
+      </p>
+      `,
+  });
+
+  /**
+   * This hook allows us to select the editor state we want to use in our component.
+   */
+  const currentEditorState = useEditorState({
+    /**
+     * The editor instance we want to use.
+     */
+    editor,
+    /**
+     * This selector allows us to select the data we want to use in our component.
+     * It is evaluated on every editor transaction and compared to it's previously returned value.
+     * You can return any data shape you want.
+     */
+    selector: (ctx) => ({
+      isBold: ctx.editor.isActive("bold"),
+      isItalic: ctx.editor.isActive("italic"),
+      isStrike: ctx.editor.isActive("strike"),
+    }),
+    /**
+     * This function allows us to customize the equality check for the selector.
+     * By default it is a `===` check.
+     */
+    equalityFn: (prev, next) => {
+      // A deep-equal function would probably be more maintainable here, but, we use a shallow one to show that it can be customized.
+      if (!next) {
+        return false;
+      }
+      return (
+        prev.isBold === next.isBold &&
+        prev.isItalic === next.isItalic &&
+        prev.isStrike === next.isStrike
+      );
+    },
+  });
+  ```
+
+  - @tiptap/core@2.5.0-pre.14
+  - @tiptap/extension-bubble-menu@2.5.0-pre.14
+  - @tiptap/extension-floating-menu@2.5.0-pre.14
+  - @tiptap/pm@2.5.0-pre.14
+
 ## 2.5.0-pre.13
 
 ### Patch Changes
